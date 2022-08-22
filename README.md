@@ -6,7 +6,7 @@ Para que el aplicativo funcione se debe crear la variable de entorno
 Que debe contener el código bearer token de acceso a twitter. 
 
 # Inicialización
-Para  inicializar los contenedores, nos ubicamos en la carpeta en la carpeta docker-compose en donde estánn los archivos 
+Para  inicializar los contenedores, nos ubicamos en la carpeta docker-compose en donde están los archivos: 
 - common.yml 
 - kafka_cluster.yml 
  
@@ -22,4 +22,4 @@ Nos ubicamos en la carpeta root y compilamos el código con el comando
 mvn clean install
 ```
 
-Desde Intellij Idea deployamos el código y en la consola se imprimirá los twitts que son enviados a kafka. 
+Desde Intellij Idea deployamos el módulo twitter-to-kafka-service y en la consola se imprimirá los twitts que son enviados a kafka. 
