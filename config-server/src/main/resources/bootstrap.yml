@@ -5,6 +5,6 @@ spring:
     config:
       server:
         git:
-          uri: file:////E:/desarrollo/workspaces/ws-java/microservices-demo/config-server
+          uri: file://E:/desarrollo/workspaces/ws-java/microservices-demo/config-server-repository
           clone-on-start: true
     fail-fast: true

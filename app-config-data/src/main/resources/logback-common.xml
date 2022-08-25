@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
+<included>
     <springProperty name="log.app-name" source="log.app-name" />
-
-    <property name="DEV_HOME" value="./twitter-to-kafka-service/logs"/>
-    <property name="APP_NAME" value="${log.app-name}"/>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
@@ -57,4 +54,4 @@
         <appender-ref ref="STASH"/>
     </root>
 
-</configuration>
+</included>
