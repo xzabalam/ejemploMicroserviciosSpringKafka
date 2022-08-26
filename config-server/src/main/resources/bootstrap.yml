@@ -8,8 +8,12 @@ spring:
           uri: https://github.com/xzabalam/microservices-demo_config-server-repository.git
           default-label: master
           clone-on-start: true
-    fail-fast: true
+      fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: springCloud_Pwd!
+      password: ${JASYPT_ENCRYPTOR_PASSWORD}
+
+jasypt:
+  encryptor:
+    password: Demo_Pwd!2020
