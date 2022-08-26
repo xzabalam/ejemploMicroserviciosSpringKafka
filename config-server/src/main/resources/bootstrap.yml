@@ -5,6 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: file://E:/desarrollo/workspaces/ws-java/microservices-demo/config-server-repository
+          uri: https://github.com/xzabalam/microservices-demo_config-server-repository.git
+          default-label: master
           clone-on-start: true
     fail-fast: true

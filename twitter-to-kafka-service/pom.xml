@@ -10,15 +10,23 @@
     <artifactId>twitter-to-kafka-service</artifactId>
     <name>twitter-to-kafka-service</name>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud-dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <!-- LOCAL -->
         <dependency>
             <groupId>com.microservices.demo</groupId>
             <artifactId>app-config-data</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.microservices.demo</groupId>
-            <artifactId>kafka-model</artifactId>
         </dependency>
         <dependency>
             <groupId>com.microservices.demo</groupId>
@@ -29,26 +37,25 @@
             <artifactId>kafka-producer</artifactId>
         </dependency>
 
-        <!-- SPRING -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -64,11 +71,6 @@
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-test</artifactId>
         </dependency>
     </dependencies>
 

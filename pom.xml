@@ -170,12 +170,9 @@
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud-dependencies.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <artifactId>spring-cloud-starter-bootstrap</artifactId>
+                <version>${spring-cloud.version}</version>
             </dependency>
-
 
             <dependency>
                 <groupId>org.twitter4j</groupId>

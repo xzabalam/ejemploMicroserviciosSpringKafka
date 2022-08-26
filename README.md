@@ -23,3 +23,9 @@ mvn clean install
 ```
 
 Desde Intellij Idea deployamos el módulo twitter-to-kafka-service y en la consola se imprimirá los twitts que son enviados a kafka. 
+
+
+# Se añade un servicio que contiene la configuración común a todos los microservicios
+## Orden de deploy
+- config-server
+- twitter-to-kafka-service
