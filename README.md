@@ -1,9 +1,10 @@
 # Configuración 
-Para que el aplicativo funcione se debe crear la variable de entorno 
+Para que el aplicativo funcione se debe crear las siguientes variables de entorno 
 
 > TWITTER_BEARER_TOKEN
+> JASYPT_ENCRYPTOR_PASSWORD
 
-Que debe contener el código bearer token de acceso a twitter. 
+La primera debe contener el código bearer token de acceso a twitter y la segunda debe tener la clave encriptada en jasypt. que se genera en el proyecto playground. 
 
 # Inicialización
 Para  inicializar los contenedores, nos ubicamos en la carpeta docker-compose en donde están los archivos: 
