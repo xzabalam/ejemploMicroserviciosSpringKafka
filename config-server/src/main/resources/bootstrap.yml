@@ -11,9 +11,9 @@ spring:
       fail-fast: true
   security:
     user:
-      name: spring_cloud_user
-      password: ${JASYPT_ENCRYPTOR_PASSWORD}
+      name: ${JASYPT_ENCRYPTOR_PASSWORD_USERNAME}
+      password: ${JASYPT_ENCRYPTOR_PASSWORD_SECRET}
 
 jasypt:
   encryptor:
-    password: Demo_Pwd!2020
+    password: ${JASYPT_ENCRYPTOR_PASSWORD_PHRASE}
