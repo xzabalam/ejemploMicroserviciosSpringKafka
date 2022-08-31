@@ -11,6 +11,15 @@ Para que el aplicativo funcione se debe crear las siguientes variables de entorn
   - La frase pública que servirá para desencriptar el secreto
 
 # Inicialización
+Se debe añadir permisos de ejecución al archivo config-server\src\main\resources\check-config-server-started.sh con el siguiente comando: 
+- Linux
+```bash
+chmod +x .\config-server\src\main\resources\check-config-server-started.sh
+```
+- Windows
+```bash
+icacls .\config-server\src\main\resources\check-config-server-started.sh /grant user:mrx
+```
 Para  inicializar los contenedores, nos ubicamos en la carpeta docker-compose en donde están los archivos: 
 - common.yml 
 - kafka_cluster.yml 
