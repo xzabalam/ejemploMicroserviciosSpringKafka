@@ -33,6 +33,8 @@ public class TwitterV2KafkaStreamRunner implements StreamRunner {
     @Override
     public void start() {
         String bearerToken = twitterToKafkaServiceConfigData.getTwitterV2BearerToken();
+        LOG.info("bearerToken {}", bearerToken);
+
         if (null != bearerToken) {
             try {
                 twitterV2StreamHelper.setupRules(bearerToken, getRules());
