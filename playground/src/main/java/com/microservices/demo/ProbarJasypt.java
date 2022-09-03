@@ -16,7 +16,7 @@ public class ProbarJasypt {
 
         String result = standardPBEStringEncryptor.encrypt("springCloud_Pwd!");
         System.out.println(result);
-        System.out.println(standardPBEStringEncryptor.decrypt("c2dZXGisfslgmfaeKTlB19nOaSlHeytleFxzTLhu7rfZQUUwNREkq5b/skuDCqkwQdIKro9Kup4MjwkZ2S0+/w=="));
+        System.out.println(standardPBEStringEncryptor.decrypt(result));
 
     }
 }
